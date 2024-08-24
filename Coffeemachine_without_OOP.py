@@ -42,7 +42,6 @@ profit = 0
 def sufficient(order):
     """this function checks whether there's enough resources left"""
     for items in order:
-        # remember it's equal too here, so it's like a precaution
         if order[items] >= RESOURCES[items]:
             print(f" Sorry there is not enough {items}. ")
             return 0
